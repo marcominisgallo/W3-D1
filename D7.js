@@ -4,7 +4,7 @@
 */
 
 let str = (s1, s2) => {
-  let str1 = s1.slice(0, 2) + s2.slice(-4);
+  let str1 = s1.slice(0, 2) + s2.slice(-3);
   return str1.toUpperCase();
 };
 console.log(str("ciao", "comunque"));
@@ -13,7 +13,7 @@ console.log(str("ciao", "comunque"));
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
-let genRandomNumber = function (n) {
+let genRandomNumber = function () {
   let numberArray = [];
   for (let i = 0; i < 10; i++) {
     numberArray.push(Math.floor(Math.random() * 101));
@@ -64,11 +64,11 @@ console.log(numPariSommati1);
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-/*let sumNum = (arr, n) => {
+let sumNum = (arr, n) => {
   return arr.map((n1) => n1 + n);
 };
 
-console.log(sumNum(numberArray, 1)); */
+console.log("es6", sumNum(genRandomNumber(), 0));
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
